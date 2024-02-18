@@ -1,0 +1,111 @@
+/* Importa a fonte 'Urbanist' do Google Fonts com várias variações de peso e estilo */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define estilos padrão para todos os elementos, como remoção de margens e preenchimentos e uso da fonte 'Urbanist' */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+}
+
+body {                                          /* Define o estilo do corpo do documento */
+  background-color: #0099FF;                  /* Define a cor de fundo como azul claro */
+}
+
+
+main {                                          /* Define o estilo da seção principal */
+  background-color: #FFF;                     /* Define a cor de fundo como branco */
+  border-radius: 8px;                           /* Define um raio de borda de 8 pixels */
+  padding: 20px;                                /* Adiciona preenchimento interno de 20 pixels */
+  width: 90%;                                   /* Define a largura como 90% da largura do contêiner pai */
+  margin: 40px auto;                            /* Centraliza o elemento horizontalmente com margem superior e inferior de 40 pixels */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   /* Adiciona sombra à caixa */
+}
+
+.add-form {                                     /* Define o estilo do formulário de adição */   
+  display: flex;                                /* Usa flexbox para organizar os elementos filhos */
+  margin-bottom: 50px;                          /* Adiciona margem inferior de 50 pixels */
+  gap: 15px;                                    /* Define o espaçamento entre os elementos internos */
+  width: 100%;                                  /* Define a largura como 100% do contêiner pai */
+}
+
+input {                                         /* Define o estilo dos campos de entrada */
+  width: 100%;                                  /* Define a largura como 100% do contêiner pai */
+  flex: 1;                                      /* Permite que o elemento cresça para ocupar o espaço disponível */
+  padding: 15px;                                /* Adiciona preenchimento interno de 15 pixels */
+  border: 1px solid #DDD;                     /* Adiciona uma borda sólida de 1 pixel com a cor #DDD */
+  border-radius: 5px;                           /* Define um raio de borda de 5 pixels */
+  outline: none;                                /* Remove o contorno ao focar o elemento */
+  font-size: 1rem;                              /* Define o tamanho da fonte como 1 rem */
+  font-weight: 600;                             /* Define a espessura da fonte como 600 (bold) */
+}
+
+button[type="submit"] {                         /* Define o estilo do botão de envio do formulário */
+  background-color: #0099FF;                  /* Define a cor de fundo como azul claro */
+  height: 50px;                                 /* Define a altura como 50 pixels */
+  width: 50px;                                  /* Define a largura como 50 pixels */
+  border: none;                                 /* Remove a borda */
+  border-radius: 5px;                           /* Define um raio de borda de 5 pixels */
+  color: #FFF;                                /* Define a cor do texto como branco */
+  font-size: 1.7rem;                            /* Define o tamanho da fonte como 1.7 rem */
+  display: flex;                                /* Usa flexbox para organizar os elementos filhos */
+  align-items: center;                          /* Alinha os itens verticalmente ao centro */
+  justify-content: center;                      /* Alinha os itens horizontalmente ao centro */
+  font-weight: 500;                             /* Define a espessura da fonte como 500 */
+  cursor: pointer;                              /* Mostra o cursor como uma mão ao passar por cima */
+}
+
+table {                                         /* Define o estilo da tabela */
+  border-collapse: collapse;                    /* Remove o espaçamento entre as células da tabela */
+  width: 100%;                                  /* Define a largura como 100% do contêiner pai */
+}
+
+td, th {                                        /* Define o estilo das células de tabela (cabeçalho e corpo) */
+  padding: 10px 15px;                           /* Adiciona preenchimento interno de 10 pixels na parte superior e inferior e 15 pixels nas laterais */
+  border: 1px solid #DDD;                     /* Adiciona uma borda sólida de 1 pixel com a cor #DDD */
+  text-align: center;                           /* Alinha o texto ao centro */
+}
+
+td {                                            /* Define o estilo das células de tabela no corpo */
+  color: #333;                                /* Define a cor do texto como cinza escuro */
+  font-weight: 600;
+}
+
+tr:nth-child(even){                             /* Define o estilo das linhas pares da tabela */
+  background-color: #F5F5F5;                  /* Define a cor de fundo como cinza claro */
+}
+
+select {                                         /* Define o estilo do menu suspenso */
+  width: 100%;                                   /* Define a largura como 100% do contêiner pai */
+  border: none;                                  /* Remove a borda */
+  padding: 10px;                                 /* Adiciona preenchimento interno de 10 pixels */
+  border-radius: 8px;                            /* Define um raio de borda de 8 pixels */
+  font-weight: 600;                              /* Define a espessura da fonte como 600 (bold) */
+  text-transform: capitalize;                    /* Transforma o texto em maiúsculas */
+  background-color: #ebebeb;                   /* Define a cor de fundo como cinza claro */
+}
+
+select:hover {                                   /* Define o estilo do menu suspenso ao passar o mouse */
+  background-color: #DDD;                      /* Define a cor de fundo como cinza mais escuro */
+}
+
+.btn-action {                                    /* Define o estilo dos botões de ação */
+  border: none;                                  /* Remove a borda */
+  border-radius: 5px;                            /* Define um raio de borda de 5 pixels */
+  padding: 5px;                                  /* Adiciona preenchimento interno de 5 pixels */
+  color: #FFF;                                 /* Define a cor do texto como branco */
+  display: inline-flex;                          /* Permite que o elemento se comporte como um elemento de linha com flexbox */
+  align-items: center;                           /* Alinha os itens verticalmente ao centro */
+  justify-content: center;                       /* Alinha os itens horizontalmente ao centro */
+  cursor: pointer;                               /* Mostra o cursor como uma mão */
+}
+
+.btn-action:nth-child(1) {                        /* Define o estilo do primeiro botão de ação */
+  background-color: orange;                     /* Define a cor de fundo como laranja */
+  margin-right: 5px;                              /* Adiciona margem à direita de 5 pixels */
+}
+
+.btn-action:nth-child(2) {                        /* Define o estilo do segundo botão de ação */
+  background-color: rgba(237, 42, 42, 0.9);     /* Define a cor de fundo como vermelho com 90% de opacidade */
+}
